@@ -10,7 +10,7 @@ public:
     for (auto& num : nums) {
       if (second < num)
         return true;
-      else if (num < first)
+      else if (num <= first)
         first = num;
       else
         second = num;
