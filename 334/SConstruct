@@ -1,0 +1,8 @@
+import os
+
+env = Environment()
+sources = env.Glob("*.cc")
+env.Append(CCFLAGS = '-std=c++1y')
+app = env.Program(target = "bin/app", source = sources)
+env.Default(app)
+
